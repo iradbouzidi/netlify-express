@@ -1,5 +1,14 @@
 'use strict';
-
 const app = require('./express/server');
 
-app.listen(3000, () => console.log('Local app listening on port 3000!'));
+// Local request handlers.
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+});
+
+
+// Start Server.
+let port = 3000;
+app.listen(port, function () {
+    console.log(`Server started on port ${port}...`);
+});
