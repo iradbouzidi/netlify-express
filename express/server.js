@@ -1,5 +1,5 @@
-const express = require('express');
-const serverless = require('serverless-http');
+const express = __non_webpack_require__('express');
+const serverless = __non_webpack_require__('serverless-http');
 const app = express();
 
 const router = express.Router();
